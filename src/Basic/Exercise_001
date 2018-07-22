@@ -7,7 +7,7 @@
 
 <script type="text/javascript">
 
-   var today = new Date();
+	var today = new Date();
   
 	var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   
@@ -17,14 +17,20 @@
   
 	function formatAMPM(date) {
 		var hours = date.getHours();
-		var ampm = hours < 12 ? ' AM' : ' PM';
+		if (hours < 12) {
+			ampm = " AM";
+		}
+		else
+			ampm = " PM";
+		if (hours == 0) {
+			hours = 12;
+		}
 		hours = hours % 12;
-		hours = hours ? hours : 12; // the hour '0' should be '12'
 		var strTime = hours + ampm;
 		return strTime;
-  }
-	
-</script>
+  	}
+
+ </script>
 
 
 

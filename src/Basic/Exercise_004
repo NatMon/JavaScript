@@ -8,7 +8,7 @@ var side1 = 5;
 var side2 = 6;
 var side3 = 7;
   
-function triangleSemiperimeter(side1, side2, side3) {
+function triangleArea(side1, side2, side3) {
   var perimeter = side1 + side2 + side3;
   var semiper = perimeter * 0.5;
   var area = semiper * (semiper - side1) * (semiper - side2) * (semiper - side3); 
@@ -16,6 +16,6 @@ function triangleSemiperimeter(side1, side2, side3) {
   return Math.round(area);
 }
   
-document.write(triangleSemiperimeter(side1, side2, side3));
+document.write(triangleArea(side1, side2, side3));
 
 </script>

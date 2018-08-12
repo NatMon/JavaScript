@@ -9,11 +9,11 @@
     var side3 = 7;
 
     function triangleArea(side1, side2, side3) {
-    var perimeter = side1 + side2 + side3;
-    var semiper = perimeter * 0.5;
-    var area = semiper * (semiper - side1) * (semiper - side2) * (semiper - side3); 
-    area = Math.sqrt(area);
-    return Math.round(area);
+        var perimeter = side1 + side2 + side3;
+        var semiper = perimeter * 0.5;
+        var area = semiper * (semiper - side1) * (semiper - side2) * (semiper - side3); 
+        area = Math.sqrt(area);
+        return Math.round(area);
     }
 
     document.write(triangleArea(side1, side2, side3));

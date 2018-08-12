@@ -1,10 +1,10 @@
+<script type="text/javascript">
+
 /*
 3. Write a JavaScript program to get the current date. 
 Expected Output : 
 mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
 */
-
-<script type="text/javascript">
   
 var today = new Date();  
 var year = today.getFullYear();

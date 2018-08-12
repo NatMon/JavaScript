@@ -7,13 +7,13 @@
     var word = "w3resource";
 
     function rotateWord(word) { 
-      for (var i = 0; i < word.length; i++) {
-        var lastLetter = word.substr(-1, 1);  
-        var wordWithNoLastLetter = word.substr(0, word.length - 1); 
-        var rotatedWord = lastLetter + wordWithNoLastLetter; 
-        word = rotatedWord; 
-        document.write(rotatedWord + '<br />');
-      }
+        for (var i = 0; i < word.length; i++) {
+            var lastLetter = word.substr(-1, 1);  
+            var wordWithNoLastLetter = word.substr(0, word.length - 1); 
+            var rotatedWord = lastLetter + wordWithNoLastLetter; 
+            word = rotatedWord; 
+            document.write(rotatedWord + '<br />');
+        }
     }
 
     document.write(word + '<br />');

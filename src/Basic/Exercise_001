@@ -8,13 +8,13 @@
 	*/
 
 	var today = new Date();
-
+  
 	var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
+  
 	var day = daysOfWeek[today.getDay()];
 
 	var message = document.write("Today is : " + day + "<br />Current time is : " + formatAMPM(today) + " : " + today.getMinutes() + " : " + today.getSeconds());
-
+  
 	function formatAMPM(date) {
 		var hours = date.getHours();
 		if (hours < 12) {
@@ -28,6 +28,6 @@
 		hours = hours % 12;
 		var strTime = hours + ampm;
 		return strTime;
-	}
+  	}
 
  </script>

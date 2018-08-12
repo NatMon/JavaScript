@@ -4,7 +4,7 @@
     6. Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.
     */
 
-    var yearInput = prompt('Enter the year: '); // Result is a string
+    var yearInput = prompt('Enter the year:'); // Result is a string
 
     var leapYear = 0; // Start from year 0 which is a leap year
     var maxYears = 4000; // This can change

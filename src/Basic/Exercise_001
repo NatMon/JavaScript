@@ -1,34 +1,34 @@
 <script type="text/javascript">
 
-/* 
-1. Write a JavaScript program to display the current day and time in the following format.  
-   Sample Output : 
-   Today is : Tuesday.   
-   Current time is : 10 PM : 30 : 38 
-*/
+	/* 
+	1. Write a JavaScript program to display the current day and time in the following format.  
+	   Sample Output : 
+	   Today is : Tuesday.   
+	   Current time is : 10 PM : 30 : 38 
+	*/
 
-var today = new Date();
+	var today = new Date();
 
-var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+	var daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-var day = daysOfWeek[today.getDay()];
+	var day = daysOfWeek[today.getDay()];
 
-var message = document.write("Today is : " + day + "<br />Current time is : " + formatAMPM(today) + " : " + today.getMinutes() + " : " + today.getSeconds());
+	var message = document.write("Today is : " + day + "<br />Current time is : " + formatAMPM(today) + " : " + today.getMinutes() + " : " + today.getSeconds());
 
-function formatAMPM(date) {
-	var hours = date.getHours();
-	if (hours < 12) {
-		ampm = " AM";
+	function formatAMPM(date) {
+		var hours = date.getHours();
+		if (hours < 12) {
+			ampm = " AM";
+		}
+		else
+			ampm = " PM";
+		if (hours == 0) {
+			hours = 12;
+		}
+		hours = hours % 12;
+		var strTime = hours + ampm;
+		return strTime;
 	}
-	else
-		ampm = " PM";
-	if (hours == 0) {
-		hours = 12;
-	}
-	hours = hours % 12;
-	var strTime = hours + ampm;
-	return strTime;
-}
 
  </script>
 

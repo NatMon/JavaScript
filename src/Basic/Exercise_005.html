@@ -1,23 +1,28 @@
-<script type="text/javascript">
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Natalia Monsalve">
+		<title>Exercise_005</title>
+	</head>
+	<body>
+		<p><b>5. Write a JavaScript program to rotate the string 'w3resource' in right direction by periodically removing one letter from the end of the string and attaching it to the front.</b></p>
+		<h2>Output:</h2>
+		<script>
+			var word = "w3resource";
+	  
+			function rotateWord(word) { 
+				for (var i = 0; i < word.length; i++) {
+					var lastLetter = word.substr(-1, 1);  
+					var wordWithNoLastLetter = word.substr(0, word.length - 1); 
+					var rotatedWord = lastLetter + wordWithNoLastLetter; 
+					word = rotatedWord; 
+					document.write(rotatedWord + '<br />');
+				}
+			}
 
-    /*
-    5. Write a JavaScript program to rotate the string 'w3resource' in right direction by periodically removing one letter from the end of the string and attaching it to the front.  
-    */
-
-    var word = "w3resource";
-
-    function rotateWord(word) { 
-        for (var i = 0; i < word.length; i++) {
-            var lastLetter = word.substr(-1, 1);  
-            var wordWithNoLastLetter = word.substr(0, word.length - 1); 
-            var rotatedWord = lastLetter + wordWithNoLastLetter; 
-            word = rotatedWord; 
-            document.write(rotatedWord + '<br />');
-        }
-    }
-
-    document.write(word + '<br />');
-    rotateWord(word);
-
-</script>
-
+			document.write(word + '<br />');
+			rotateWord(word);
+		</script>
+	</body>
+</html>

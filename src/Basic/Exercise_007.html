@@ -1,16 +1,22 @@
-<script type="text/javascript">
-
-    /*
-    7. Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.
-    */
-
-    var date;
-
-    for (var i = 2014; i < 2051; i++) {
-        date = new Date(i, 00, 01);
-        if (date.getDay() == 0) {
-            document.write("1st January of " + i + " is a Sunday<br />");
-        }
-    }
-
-</script>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Natalia Monsalve">
+		<title>Exercise_007</title>
+	</head>
+	<body>
+		<p><b>7. Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.</b></p>
+		<h2>Output:</h2>
+		<script>
+			var date;
+  
+			for (var i = 2014; i < 2051; i++) {
+				date = new Date(i, 00, 01);
+				if (date.getDay() == 0) {
+					document.write("1st January of " + i + " is a Sunday<br />");
+				}
+			} 
+		</script>
+	</body>
+</html>

@@ -1,18 +1,24 @@
-<script type="text/javascript">
-
-    /*
-    9. Write a JavaScript program to calculate days left until next Christmas.
-    */
-    
-    var today = new Date();
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Natalia Monsalve">
+		<title>Exercise_009</title>
+	</head>
+	<body>
+		<p><b>9. Write a JavaScript program to calculate days left until next Christmas.</b></p>
+		<h2>Output:</h2>
+		<script>
+			var today = new Date();
   
-    var currentYear = today.getFullYear();
+			var currentYear = today.getFullYear();
   
-    var christmas = new Date(currentYear, 11, 25); 
+			var christmas = new Date(currentYear, 11, 25); 
   
-    var difference = christmas.getTime() - today.getTime();
-    difference = difference / (1000*60*60*24);
+			var difference = christmas.getTime() - today.getTime();
+			difference = difference / (1000*60*60*24);
 
-    document.write("Days left until next Christmas: " + Math.ceil(difference));
-
-</script>   
+			document.write("Days left until next Christmas: " + Math.ceil(difference)); 
+		</script>
+	</body>
+</html>

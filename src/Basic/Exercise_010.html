@@ -1,26 +1,36 @@
-Write a JavaScript program to calculate multiplication and division of two numbers (input from user).
-Sample form : 
-sample form
-
-<html>
-  <body>
-
-      <form>
-        <div>
-        1st Number:
-        <input id="firstNumber" type="text" />
-        <br />
-        
-        2nd Number:
-        <input id="secondNumber" />
-
-        <input type="submit" value="Multiply" />
-        <input type="submit" value="Divide" />
-        </div>
-      </form>
-    <script type="text/javascript">
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Natalia Monsalve">
+		<title>Exercise_010</title>
+	</head>
+	<body>
+		<p><strong>11. Write a JavaScript program to calculate multiplication and division of two numbers (input from user).</strong></p>
+		<h2>Output:</h2>
     
+		<form>
+			<p>1st Number: <input id="firstNumber" type="text" /><br></p>
+			<p>2nd Number: <input id="secondNumber" type="text" /><br></p>
+      
+			<input type="button" value="Multiply" onclick="multiply()">
+			<input type="button" value="Divide" onclick="divide()">
+		</form>
     
-    </script>
-  </body>
+		<p id="result"></p>
+    
+		<script>
+			function multiply() {
+				var fNumber = document.getElementById('firstNumber').value;
+				var sNumber = document.getElementById('secondNumber').value;
+				document.getElementById('result').innerHTML = "The result is :<br>" + fNumber * sNumber;
+			}
+      
+			function divide() {
+				var fNumber = document.getElementById('firstNumber').value;
+				var sNumber = document.getElementById('secondNumber').value;
+				document.getElementById('result').innerHTML = "The result is :<br>" + fNumber / sNumber; 
+			}   
+		</script>
+	</body>
 </html>

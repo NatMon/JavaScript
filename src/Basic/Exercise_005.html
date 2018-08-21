@@ -6,23 +6,26 @@
 		<title>Exercise_005</title>
 	</head>
 	<body>
-		<p><b>5. Write a JavaScript program to rotate the string 'w3resource' in right direction by periodically removing one letter from the end of the string and attaching it to the front.</b></p>
+		<p><strong>5. Write a JavaScript program to rotate the string 'w3resource' in right direction by periodically removing one letter from the end of the string and attaching it to the front.</strong></p>
 		<h2>Output:</h2>
+		<p id="result"></p>
 		<script>
 			var word = "w3resource";
-	  
+			var msg = "";
+      
 			function rotateWord(word) { 
+				msg = word + '<br />';
 				for (var i = 0; i < word.length; i++) {
 					var lastLetter = word.substr(-1, 1);  
 					var wordWithNoLastLetter = word.substr(0, word.length - 1); 
 					var rotatedWord = lastLetter + wordWithNoLastLetter; 
 					word = rotatedWord; 
-					document.write(rotatedWord + '<br />');
+					msg += rotatedWord + '<br />';
 				}
 			}
 
-			document.write(word + '<br />');
 			rotateWord(word);
+			document.getElementById('result').innerHTML = msg;
 		</script>
 	</body>
 </html>

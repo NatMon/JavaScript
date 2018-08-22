@@ -6,17 +6,21 @@
 		<title>Exercise_007</title>
 	</head>
 	<body>
-		<p><b>7. Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.</b></p>
+		<p><strong>7. Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.</strong></p>
 		<h2>Output:</h2>
+		<p id="result"></p>
 		<script>
 			var date;
-  
+			var msg = '';
+
 			for (var i = 2014; i < 2051; i++) {
 				date = new Date(i, 00, 01);
 				if (date.getDay() == 0) {
-					document.write("1st January of " + i + " is a Sunday<br />");
+					msg += "1st January of " + i + " is a Sunday<br />";
 				}
-			} 
+			}
+      
+			document.getElementById('result').innerHTML = msg;
 		</script>
 	</body>
 </html>

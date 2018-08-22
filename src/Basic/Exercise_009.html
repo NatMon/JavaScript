@@ -8,17 +8,17 @@
 	<body>
 		<p><b>9. Write a JavaScript program to calculate days left until next Christmas.</b></p>
 		<h2>Output:</h2>
+		<p id="result"></p>
 		<script>
 			var today = new Date();
-  
+
 			var currentYear = today.getFullYear();
-  
+
 			var christmas = new Date(currentYear, 11, 25); 
-  
+
 			var difference = christmas.getTime() - today.getTime();
 			difference = difference / (1000*60*60*24);
-
-			document.write("Days left until next Christmas: " + Math.ceil(difference)); 
+			document.getElementById('result').innerHTML = "Days left until next Christmas: " + Math.ceil(difference); 
 		</script>
 	</body>
 </html>

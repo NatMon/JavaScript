@@ -1,8 +1,8 @@
 # Exercise 001
 
-Write a JavaScript program to display the current day and time in the following format.
+Write a JavaScript program to display the current day and time in the following format:
 
-Sample Output: 
+_Sample Output:_
 
 Today is : Tuesday.
 Current time is : 10 PM : 30 : 38
